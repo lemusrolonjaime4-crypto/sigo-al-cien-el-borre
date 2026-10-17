@@ -1,0 +1,200 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sigo al cien, corrido original de El Borre. Consulta opciones de licencia para artistas y grupos norteños.">
+  <title>Sigo al cien | El Borre</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    :root {
+      --fondo: #101014;
+      --panel: #1d1c24;
+      --dorado: #e0b45c;
+      --texto: #ffffff;
+      --suave: #c7c4d0;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--fondo);
+      color: var(--texto);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #393641;
+    }
+
+    header strong {
+      color: var(--dorado);
+      letter-spacing: 2px;
+    }
+
+    main {
+      width: min(900px, 92%);
+      margin: auto;
+    }
+
+    .hero {
+      padding: 75px 10px 55px;
+      text-align: center;
+    }
+
+    .etiqueta {
+      color: var(--dorado);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 13px;
+    }
+
+    h1 {
+      margin: 15px 0;
+      font-size: clamp(42px, 9vw, 76px);
+      line-height: 1.1;
+    }
+
+    h2 { color: var(--dorado); }
+
+    .subtitulo {
+      max-width: 650px;
+      margin: 20px auto;
+      color: var(--suave);
+      font-size: 18px;
+    }
+
+    .boton {
+      display: inline-block;
+      margin: 8px 5px;
+      padding: 13px 22px;
+      border-radius: 8px;
+      background: var(--dorado);
+      color: #17130b;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .boton-secundario {
+      background: transparent;
+      border: 1px solid var(--dorado);
+      color: var(--dorado);
+    }
+
+    .tarjetas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+      margin: 25px 0 45px;
+    }
+
+    .tarjeta, .licencia {
+      padding: 24px;
+      background: var(--panel);
+      border: 1px solid #393641;
+      border-radius: 14px;
+    }
+
+    .tarjeta p, .nota { color: var(--suave); }
+
+    .precio {
+      color: var(--dorado);
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    section { margin-bottom: 45px; }
+
+    footer {
+      padding: 25px 15px;
+      border-top: 1px solid #393641;
+      text-align: center;
+      color: var(--suave);
+      font-size: 13px;
+    }
+
+    a:focus { outline: 2px solid white; }
+
+    @media (max-width: 480px) {
+      .hero { padding-top: 48px; }
+      .boton { display: block; text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <strong>EL BORRE · CORRIDOS ORIGINALES</strong>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="etiqueta">Corrido norteño clásico</p>
+      <h1>Sigo al cien</h1>
+      <p class="subtitulo">
+        Una historia de trabajo, superación, lealtad y gratitud.
+        Una obra original de Jaime Lemus Rolón, conocido como El Borre.
+      </p>
+      <a class="boton" href="#licencia">Consultar licencia</a>
+      <a class="boton boton-secundario" href="#obra">Conocer la obra</a>
+    </section>
+
+    <section id="obra">
+      <h2>Una historia que merece ser escuchada</h2>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <h3>Trabajo y superación</h3>
+          <p>Una letra inspirada en el esfuerzo y en seguir adelante.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Lealtad y gratitud</h3>
+          <p>Un homenaje a las personas que apoyan en los momentos importantes.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Para artistas</h3>
+          <p>Una propuesta para grupos norteños y proyectos de música regional mexicana.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="licencia" class="licencia">
+      <p class="etiqueta">Licencias de la obra</p>
+      <h2>¿Quieres grabar Sigo al cien?</h2>
+      <p>
+        Si eres cantante, representante o integrante de un grupo,
+        puedes consultar las condiciones para utilizar la letra.
+      </p>
+      <p class="precio">$3,000 MXN</p>
+      <p class="nota">
+        Precio orientativo y negociable, sujeto a contrato.
+        La licencia, la exclusividad, los créditos y las posibles regalías
+        deben acordarse por escrito antes de cualquier pago.
+      </p>
+
+      <h3>Solicita información</h3>
+      <p>
+        Contacto: agrega aquí tu número de WhatsApp o correo electrónico
+        antes de publicar la página para recibir consultas.
+      </p>
+      <p class="nota">
+        Esta página no procesa pagos ni concede licencias automáticamente.
+        La letra se ofrece por ahora como obra escrita, sin grabación incluida.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>El Borre · Sigo al cien</p>
+    <p>Autor declarado: Jaime Lemus Rolón.</p>
+    <p>Consulta y formaliza las condiciones de uso antes de realizar un pago.</p>
+  </footer>
+</body>
+</html>
